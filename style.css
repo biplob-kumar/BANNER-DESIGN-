@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* banner css start */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to right, rgba(21, 21, 22, 0.7), rgba(21, 21, 22, 0.7)) ,url('./img/banner.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    opacity: 1.0;
+  
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar h3{
+     font-size: 30px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px ;
+    position: relative;
+
+}
+.navbar ul li a {
+    display: block;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+   
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #fffafa;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: .3s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+/*  navbar css end  */
+
+/*  content css start */
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    color: rgb(255, 249, 249);
+    font-size: 60px;
+    margin-top: 40px;
+}
+.content p{
+    color: rgb(253, 248, 248);
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(227, 172, 19);
+    background: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    height:100% ;
+    width: 0;
+    background-color:rgb(227, 172, 19) ;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+button:hover span{
+width: 100%;
+}
+button:hover{
+    border: none;
+}
+/*  content css  end  */
+
+
+
+@media only screen and (max-width: 480px) {
+    .banner {
+        width: 100%;
+        height: 148vh;
+    }
+
+
+
+
+    .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 36px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar h3{
+         font-size: 10px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px ;
+        position: relative;
+    
+    }
+    .navbar ul li a {
+        font-size: 12px;
+        margin: -12px;
+        margin-top: 8px;
+       
+    }
+    .navbar ul li::after{
+        content: "";
+        height: 3px;
+        width: 0;
+        background-color: #fffafa;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        transition: .3s;
+    }
+    .navbar ul li:hover:after{
+        width: 100%;
+    }
+    
+    /*  navbar css end  */
+    
+    /*  content css start */
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    .content h1{
+        font-size: 20px;
+        margin-top: 207px;
+    }
+    .content p{
+        color: rgb(253, 248, 248);
+
+     
+        font-size: .6rem;
+        margin-top: 20px;
+    }
+    button{
+        position: relative;
+        left: 34%;
+        margin-left: 20px;
+        display: block;
+        width: 134px;
+        padding: 10px 5px;
+        margin: 10px 10px;
+        overflow: hidden;
+    }
+ 
+  
+}
